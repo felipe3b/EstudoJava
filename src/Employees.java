@@ -1,11 +1,11 @@
 public enum Employees {
 
-    EMPLOYEE1(1,"Felipe","Soares", 39,"Desenvolvedor",
-            5000, 1111,"XPTO Tech", 2222, "TI"),
-    EMPLOYEE2(2,"Isabela","Soares", 22,"Estagiaria",
-                      1000, 1111,"XPTO Tech", 2222, "TI"),
-    EMPLOYEE3(3,"Damaris","Baumgart",46,"Administrativa",
-            10000,1111,"XPTO Tech",3333,"Financeiro");
+    EMPLOYEE1(1, "Felipe", "Soares", 39, "Desenvolvedor",
+            5000, 1111, "XPTO Tech", 2222, "TI"),
+    EMPLOYEE2(2, "Isabela", "Soares", 22, "Estagiaria",
+            1000, 1111, "XPTO Tech", 2222, "TI"),
+    EMPLOYEE3(3, "Damaris", "Baumgart", 46, "Administrativa",
+            10000, 1111, "XPTO Tech", 3333, "Financeiro");
     private final int funcionarioId;
     private final String nome;
     private final String sobreNome;
@@ -16,6 +16,7 @@ public enum Employees {
     private final String empresaNome;
     private final int departamentoId;
     private final String departamentoNome;
+
     Employees(int funcionarioId, String nome, String sobreNome, int idade, String funcao,
               int salario, int empresaId, String empresaNome, int departamentoId, String departamentoNome) {
         this.funcionarioId = funcionarioId;

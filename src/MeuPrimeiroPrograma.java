@@ -13,7 +13,7 @@ public class MeuPrimeiroPrograma {
         } else if (args[0].equals("multiplicar")) {
             mult(x, y);
         } else {
-            System.out.println("Nenhuma instrução definida para : " + args[0] );
+            System.out.println("Nenhuma instrução definida para : " + args[0]);
         }
 
     }

@@ -19,28 +19,25 @@ public class Example {
 //        System.out.println(employees.teste("teste interface 2"));
 
         List<Employees> funcionarios = new ArrayList<>();
-        for (Employees a: Employees.values()){
+        for (Employees a : Employees.values()) {
 //            System.out.println(a);
             funcionarios.add(a);
         }
 
-        for (Employees funcionario: funcionarios){
+        for (Employees funcionario : funcionarios) {
             System.out.println(funcionario.getNome() + " " + funcionario.getFuncionarioId());
         }
         int idFuncionario = 2;
 
-        for (Employees funcionario: funcionarios){
+        for (Employees funcionario : funcionarios) {
             int a = funcionario.getFuncionarioId();
-            System.out.println( "Verificando valores : " + a + " " + funcionario.getFuncionarioId());
-            if( a == idFuncionario ) {
+            System.out.println("Verificando valores : " + a + " " + funcionario.getFuncionarioId());
+            if (a == idFuncionario) {
                 System.out.println("Funcionario OK " + funcionario.getNome() + " " + funcionario.getFuncionarioId());
             } else {
                 System.out.println("Funcionario com ID: " + idFuncionario + " nao existe.");
             }
         }
-
-
-
 
 
     }
